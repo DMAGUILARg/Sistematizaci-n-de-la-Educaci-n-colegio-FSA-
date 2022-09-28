@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilosLink.css">
 </head>
 
 
@@ -37,8 +38,8 @@
                 <a class="text-dark" href="#">Contacto</a>
             </nav>
             <div class="btn border border-dar">
-                <a href="formsD.html" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512" >
+                <a href="formsD.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
                         <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                         <path
                             d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
@@ -49,18 +50,30 @@
 
     </header>
 
-    <section >
+    <section>
 
         <div id="carouselExampleControls" class="padre carousel slide caro-edit " data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active img_uno">
-                    <a href="#">INSCRIBETE</a>                                                          
+                    <a target="_blank" 
+                        class="estiloIrDocumentos"
+                        href="https://docs.google.com/presentation/d/1w14RkQHhuUPMmjUDYqDxTzLCnQtwxAYk/edit?usp=sharing&ouid=114210137754237562580&rtpof=true&sd=true">
+                        Ir a Documentos
+                    </a>
                 </div>
                 <div class="carousel-item img_dos ">
-                    
+                    <a target="_blank" 
+                    class="estiloIrDocumentos"
+                    href="https://docs.google.com/presentation/d/1w14RkQHhuUPMmjUDYqDxTzLCnQtwxAYk/edit?usp=sharing&ouid=114210137754237562580&rtpof=true&sd=true">
+                    Ir a Documentos
+                </a>
                 </div>
                 <div class="carousel-item img_tres ">
-                    
+                    <a target="_blank" 
+                    class="estiloIrDocumentos"
+                    href="https://docs.google.com/presentation/d/1w14RkQHhuUPMmjUDYqDxTzLCnQtwxAYk/edit?usp=sharing&ouid=114210137754237562580&rtpof=true&sd=true">
+                    Ir a Documentos
+                </a>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -74,9 +87,6 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-
-
     </section>
 
     <section class="container mt-5">
@@ -86,34 +96,37 @@
 
                     <article class="col art-cards sombra_cards">
                         <div class="img-cards">
-                            <img  src="img/bMusica.png" alt="primer-art">
+                            <img src="img/bMusica.png" alt="primer-art">
                         </div>
                         <div class="tx-card">
                             <span> By Amanda </span>
                             <a href="#">Banda andina</a>
-                            <p> The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …</p>
-                        </div>
-                    </article>
-    
-                    <article class="col art-cards sombra_cards">
-                        <div class="img-cards">
-                            <img  src="img/Pintura.png" alt="seg-art">
-                        </div>
-                        <div class="tx-card">
-                            <span> By Cayetana lopez </span>
-                            <a href="#">Arte, mural</a>
-                            <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …</p>
+                            <p> The world is getting smaller and we’re becoming more mobile. So why should you be forced
+                                to only receive money in a single …</p>
                         </div>
                     </article>
 
                     <article class="col art-cards sombra_cards">
                         <div class="img-cards">
-                            <img  src="img/tocando.png" alt="seg-art">
+                            <img src="img/Pintura.png" alt="seg-art">
+                        </div>
+                        <div class="tx-card">
+                            <span> By Cayetana lopez </span>
+                            <a href="#">Arte, mural</a>
+                            <p>Our simple budgeting feature allows you to separate out your spending and set realistic
+                                limits each month. That means you …</p>
+                        </div>
+                    </article>
+
+                    <article class="col art-cards sombra_cards">
+                        <div class="img-cards">
+                            <img src="img/tocando.png" alt="seg-art">
                         </div>
                         <div class="tx-card">
                             <span> By Secretaria de educacion </span>
                             <a href="#">Encuentro bandas</a>
-                            <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …</p>
+                            <p>Our simple budgeting feature allows you to separate out your spending and set realistic
+                                limits each month. That means you …</p>
                         </div>
                     </article>
 
@@ -138,7 +151,7 @@
 
             <div class="col-2 border border-primary ">
                 <blockquote class="text-center">
-                    
+
                 </blockquote>
             </div>
 
@@ -198,7 +211,7 @@
 
 
     <!--JS bootstrap-->
-    
+
     <script src="css/instalar-bp-ac/js/bootstrap.bundle.min.js "></script>
 </body>
 
