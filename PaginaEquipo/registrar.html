@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Alamos Burgers</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/instalar-bp-ac/css/bootstrap.min.css">
+
+  <!---->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <style>
+    body {
+      background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+    }
+
+    main .sombra {
+      -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 32, 0.48);
+      -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 32, 0.48);
+      box-shadow: 0px 5px 15px 0px rgba(112, 112, 32, 0.48);
+      background-color: white;
+      border-radius: 1rem;
+    }
+    form{
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+
+
+  <!-- ======= Header ======= -->
+
+  <header>
+    <section class="registrar breadcrumbs  mt-5">
+      <div class="container ">
+
+        <div class="d-flex  align-items-center justify-content-between">
+          <h2>Administración</h2>
+          <ol class="text-dark fs-3">
+            <li><a class="text-decoration-none hover-none text-dark " th:href="@{/loginadmin}">Inicio</a></li>
+            <li>Administración</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+  </header>
+
+  <main class="lar_registrar" id="main">
+
+
+    <section class="container sombra inner-page text-center mt-5 h-100 d-flex flex-column justify-content-center">
+      <div class=" mt-5 ">
+        <p class="pt-5 fs-1 fw-bold">
+          Bienvenido administrador a Crear Usuario
+        </p>
+
+        <h2>Formulario Usuario</h2>
+
+        <div class="formularioiniciosesion pt-5 d-flex flex-column align-items-center pb-5 ">
+          <form method="post" class="bg-dark w-50 " >
+            <div class="pb-3">
+              <label for="idusuario" class="fs-2">Codigo estudiante</label>
+              <input type="number" name="idusuario" placeholder="Su identificación...">
+            </div>
+            <div class="pb-3">
+              <label for="nombres">Nombres</label>
+              <input type="text" name="nombres" placeholder="Sus nombres...">
+            </div>
+
+            <div class="pb-3">
+              <label for="apellidos">Apellidos</label>
+              <input type="text" name="apellidos" placeholder="Sus nombres...">
+            </div>
+
+            <div class="pb-3">
+              <label for="nombres">Direccion</label>
+              <input type="text" name="nombres" placeholder="Sus nombres...">
+            </div>
+
+            <div class="pb-3">
+              <label for="nombres">Telefono</label>
+              <input type="text" name="nombres" placeholder="Sus nombres...">
+
+            </div>
+            <div class="pb-3">
+              <label for="nombres">Correo</label>
+              <input type="text" name="nombres" placeholder="Sus nombres...">
+            </div>
+
+            <div class="pb-3">
+              <label for="nombres">Grado</label>
+              <input type="text" name="nombres" placeholder="Sus nombres...">
+
+            </div>
+
+            
+            <div class="pb-3">
+              <label for="nombres">Usuario</label>
+              <input type="text" name="nombres" placeholder="Sus nombres...">
+            </div>
+
+            <div class="pb-3">
+              <label for="nombres">Password</label>
+              <input type="text" name="nombres" placeholder="Sus nombres...">
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <input name="submit" type="submit" value="Registrar">
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======== -->
+  <footer id="footer">
+
+
+    <div class="container mt-5">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="css/instalar-bp-ac/js/bootstrap.bundle.min.js "></script>
+
+</body>
+
+</html>

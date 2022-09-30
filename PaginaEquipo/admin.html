@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Portal docente</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="css/instalar-bp-ac/css/bootstrap.min.css">
+
+    <!---->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+
+
+    <!-- ======= Header ======= -->
+
+    <header>
+        <section class="breadcrumbs">
+            <div class="container py-4">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="fs-1 f-bold">Administración</h2>
+                    <ol class="mb-1">
+                        <li class="fs-3"><a th:href="@{/}">Inicio</a></li>
+                        <li class="fs-3">Administración</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <main id="main">
+        
+
+        <section class="inner-page container center-admin">
+            <div class="">
+                <p class="fs-1 text-center">
+                    Bienvenido Docente
+                </p>
+
+
+                <a class="btn btn-dark px-4 py-3 fs-3" th:href="@{/registrar}">Crear Usuario</a>
+
+                <br>
+                <br>
+
+
+
+                <table class="table">
+
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="fs-3">#</th>
+                            <th cope="col"  class="fs-3">Nombre</th>
+                            <th cope="col"  class="fs-3">Apellido</th>
+                            <th cope="col"  class="fs-3">Direccion</th>
+                            <th cope="col"  class="fs-3">Telefono</th>
+                            <th cope="col"  class="fs-3">correo</th>
+                            <th cope="col"  class="fs-3">grado</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="estudiantes: ${est}">
+                            <th scope="row">1</th>
+                            <td th:text="${estudiantes.idestudiante}"></td>
+                            <td th:text="${estudiantes.nombre}"></td>
+                            <td th:text="${estudiantes.direccion}"></td>
+                            <td th:text="${estudiantes.telefono}"></td>
+                            <td th:text="${estudiantes.correo}"></td>
+                            <td th:text="${estudiantes.grado}"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+            </div>
+            <div th:if="${usuarios == null or usuarios.empty}">
+                La lista de usuarios está vacía
+            </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+
+        <div class="container">
+            <div class="copyright text-white">
+                &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+    <script src="css/instalar-bp-ac/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>

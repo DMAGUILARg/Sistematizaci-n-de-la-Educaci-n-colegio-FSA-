@@ -10,7 +10,9 @@
     --h3: #2d314d;
     --enlaces: #2ab6d9;
     --h4: #31D35C;
+    --header: hsl(194, 62%, 88%);
     --menu: #f08080;
+    --footer: #242D52;
          
 }
 
@@ -44,18 +46,27 @@ a{
     color: var(--blanco);
 }
 
-
+header{
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-color: var(--header);
+}
 
 /* Cabecera */
 
 nav a{
     padding:  0 2rem;
-    text-decoration: none;
+    
     font-size: 2rem;
     position: relative;
     font-weight: 700;
     
 }
+
+header nav a.text-dark:hover{
+    font-size: 2.3rem;
+}
+
 nav a::after{
     content: "";
     position: absolute;
@@ -70,14 +81,15 @@ nav a:hover::after{
     width: 60%;
 }
 
-.btn{
+
+header .btn{
     width: 8rem;
     height: 5rem;
     
 
 }
 
-.btn:hover{
+header .btn:hover{
     background-image: linear-gradient(to right, #45B7D6, #747DA5);
 }
 
@@ -85,6 +97,7 @@ nav a:hover::after{
 
 .caro-edit{
     height: 55.5rem;
+    /* position: relative; */
    
 }
 .caro-edit .carousel-inner{
@@ -97,6 +110,7 @@ nav a:hover::after{
     /* height: 55rem; */
     
 }
+
 
 .padre .carousel-inner .img_uno{
     
@@ -121,31 +135,91 @@ nav a:hover::after{
 }
 
 
-.altura{
-    height: 45rem;
-    gap: 1rem;
-}
+
 footer{
-    background-color: #2d314d;
-    
-    
-
-   
+    background-color: var(--footer);
 
 }
 
-.text-white p:hover{
-    color: #31D35C;
+
+
+.presentacion .padre .carousel-inner .img_uno{
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    
+    /* width: 20rem;
+    height: 10rem;
+    background-color: var(--enlaces); 
+    position: absolute;
+    left: 45%;
+    transform: translate(0, -45%);
+    bottom: 2rem; */
+    /* align-items: center;  */
 }
 
+.presentacion .padre .carousel-inner .img_tres .container p{
+    width: 80%;
+    font-size: 5rem;
 
+}
+.presentacion .padre .carousel-inner .img_uno .container{
+    margin-bottom: 4rem;
+    
+}
+.presentacion .padre .carousel-inner .img_uno .container div p{
+    font-size: 6rem;
+    
+}
+.presentacion .padre .carousel-inner .img_uno .container a{
+    padding: 2.5rem 4rem;
 
+}
+/* .presentacion .padre .carousel-inner .img_uno .container a span{
+    padding: 2.5rem 4rem;
+    
+} */
+
+/* CARDS */
+
+main .altura{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3rem;
+}
+@media(max-width:1024px){
+    main .altura{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 70%;
+        margin: 4rem auto 0 auto;
+    }
+
+}
+main .mapas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+}
+@media(max-width:1024px){
+    main .mapas{
+        grid-template-columns: 1fr ;
+        column-gap: 2rem;
+        width: 80%;
+        margin: 4rem auto 0 auto;
+    }
+    
+
+}
 .normas h3{
     font-size: 2rem;
 }
 
 .mb-0{
-font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 
@@ -246,7 +320,99 @@ font-size: 1.6rem;
    
 
 }
+
+/* NOSOTROS */
+
+
+
+/* sedes */
+.bordes{
+	border-radius: 2rem;
+	margin: 4rem 0;
+	display: grid;
+    grid-template-columns: repeat(2,1fr);
+	box-shadow: -0.5px 0.5px 5px #adabab;
+	padding: 3rem 3rem;
+	height: auto;
+}
+main .bordes .texto{
+    font-size: 2rem;
+}
+.bordes .img_a{
+    background-image: url(../img/sedea.webp);
+}
+.bordes .img_b{
+    background-image: url(../img/sedeb.webp);
+}
+.bordes .img_c{
+    background-image: url(../img/sedec.webp);
+}
+.img_sedes {
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: 0 auto;
+}
+
 @media(max-width:1024px){
+    .bordes{
+        border-radius: 2rem;
+        margin: 4rem 0;
+              
+        box-shadow: -0.5px 0.5px 5px #adabab;
+        padding: 2rem 3rem;
+        height: auto;
+    }
+
+    main .bordes .texto{
+        font-size: 1.5rem;
+        grid-column: 1/3;
+        text-align: center;
+        
+        
+    }
+    main .bordes{
+        display: flex;
+        flex-direction: column;
+    }
+    main .bordes .img_sedes{
+        width: 80%;
+        height: 30rem;
+        
+    }
 
     
+}
+
+/* ADMINISTRADOR LOGIN */
+main .center-admin{
+    height: 60rem;
+    
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+/* REGISTRA ESTUDIANTE */
+header .registrar{
+    height: 10rem;
+}
+.lar_registrar{
+    height: 60rem;
+
+}
+
+
+.pejemplo .ejemplo{
+    width: 20rem;
+    height: 30rem;
+    background-color: #2ab6d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
