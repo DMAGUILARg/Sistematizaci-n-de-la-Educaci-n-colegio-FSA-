@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/instalar-bp-ac/css/bootstrap.min.css">
+
+    <!---->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+    <header class=" py-4 ">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a th:href="@{/}">
+                <img class="rounded-circle" src="img/Logo.svg" alt="img-logo">
+            </a>
+            <nav class="d-flex py-3 ">
+                <a class="text-dark" th:href="@{/nosotros}">Nosotros</a>
+                <a class="text-dark" href="#">Curriculum</a>
+                <a class="text-dark" href="#">Sedes</a>
+                <a class="text-dark" href="#">orientacion</a>
+                <a class="text-dark" href="#">Formato</a>
+                <a class="text-dark" href="#">Contacto</a>
+            </nav>
+            <div class="btn border border-dark">
+                <a th:href="@{/login}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container mb-5">
+        <div class="bordes" >
+            <div class="texto pt-4 pb-4 ">
+                <h2>Sede A</h2>
+                <p >El Colegio Fernando Soto Aparicio cuenta con cuatro niveles de enseñanza, tres de los cuales se encuentran en la Sede A:
+    
+                    Nivel 1: Básica primaria grado cuarto y quinto.
+                    
+                    <br> Nivel 2: Básica secundaria grado sexto hasta noveno.
+                    
+                    <br> Nivel 3: Educación media vocacional décimo y once. </p>
+            </div>
+            <div class="pt-4 pb-4 img_sedes img_a rounded-circle">
+                
+            </div>
+        </div>
+        <div class="bordes" >
+            <div class="pt-4 pb-4 img_sedes img_b rounded-circle">
+                
+            </div>
+            <div class=" texto pt-4 pb-4">
+                
+                <h2>Sede B</h2>
+                <p class="texto">El Colegio Fernando Soto Aparicio cuenta con cuatro niveles de enseñanza, dos de los cuales se encuentran en la Sede B:
+
+                       <br> Nivel 1: Básica primaria grado primero a cuarto.
+                    
+                       <br> Nivel 2: Preescolar y Transición</p>
+            </div>
+            
+        </div>
+
+        <div class="bordes" >
+            <div class="texto pt-4 pb-4">
+                <h2>Sede B</h2>
+                <p class="texto">El Colegio Fernando Soto Aparicio cuenta con cuatro niveles de enseñanza, dos de los cuales se encuentran en la Sede B:
+
+                       <br> Nivel 1: Básica primaria grado primero a cuarto.
+                    
+                       <br> Nivel 2: Preescolar y Transición
+                </p>
+                
+            </div>
+            <div class="pt-4 pb-4 img_sedes img_c rounded-circle">
+                
+            </div>
+        </div>
+    
+    </main>
+    
+
+    <footer class="mt-5 pb-2">
+        <div class="  d-flex justify-content-around py-3 text-white ">
+            <div class="normas f-size">
+                <h3 class="text-center">Equipo</h3>
+                <p> &#169 ALL right Reserved - ANDRES DAVID</p>
+                <p> &#169 All right Reserved- DIANA MARIA AGUILAR</p>
+                <p> &#169 All right Reserved - FERNANDO AGUILAR</p>
+                <p> &#169 All right Reserved - LAURA TRIANA</p>
+                <p> &#169 All right Reserved - CRISTIAN BALLESTEROS</p>
+
+            </div>
+            <div class="normas text-center ">
+                <h3 class="mb-5">Normativa</h3>
+                <div>
+                    <a class="text-white " href="#">
+                        <h4 class="mb-0">Manual de convivencia</h4>
+                    </a>
+                    <a class="text-white " href="#">
+                        <h4 class="mb-0">Reglamentacion profesoral</h4>
+                    </a>
+                </div>
+            </div>
+            <div class=" normas text-center">
+                <h3 class="mb-5">Sede principal</h3>
+                <h4 class="mb-0">Dirección. Crr 73 A Bis B N 36 -47 sur</h4>
+            </div>
+            <div class="normas">
+                <h3 class="mb-5">Siguenos</h3>
+                <div class="d-flex justify-content-between">
+                    <a class="deco-none" href="https://www.facebook.com/Colegio-Fernando-Soto-Aparicio-2780239388657602"
+                        target="_blank">
+                        <img src="img/icon-facebook.svg" alt="log_fa">
+                    </a>
+
+                    <a class="deco-none" href="#">
+                        <img src="img/icon-youtube.svg" alt="log_you">
+                    </a>
+
+                    <a class="deco-none" href="#">
+                        <img src="img/icon-instagram.svg" alt="log_ins">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+    <!--JS bootstrap-->
+
+    <script src="css/instalar-bp-ac/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
